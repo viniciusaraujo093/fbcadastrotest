@@ -10,7 +10,7 @@ After do |scenario|
 end
 
 at_exit do
-  info = { Environment: 'SEDUC', Date: Time.now, Tester: 'Vinicius Araujo' }
+  info = { Environment: 'UNINASSAU', Date: Time.now, Tester: 'Vinicius Araujo' }
   ReportBuilder.configure do |config|
     config.input_path = 'log/report.json'
     config.report_path = "log/report_#{Time.now.strftime('%d%m%Y%H%M%S')}"
